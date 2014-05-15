@@ -8,6 +8,8 @@ git_prompt_info() {
 setopt promptsubst
 export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
 
+# export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \W \[\e[0;31m\][$(~/.rvm/bin/rvm-prompt i v p g system)]\[\e[0;32m\] $(__git_ps1 "(%s)")\[\e[0;37m\] \$\[\033[00m\] '
+
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
@@ -66,11 +68,13 @@ if which rbenv &>/dev/null ; then
   eval "$(rbenv init - --no-rehash)"
 fi
 
-# load thoughtbot/dotfiles scripts
-export PATH="$HOME/.bin:$PATH"
-
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
+
+source ~/.git-completion.sh
+
+# Load RVM into a shell session *as a function*
+[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
