@@ -15,7 +15,7 @@ Install:
     rcup -d .dotfiles -x README.md
 
 This will create symlinks for config files in your home directory. The `-x`
-options, which exclude the `README.md`, `LICENSE`, and `Brewfile` files, are
+options, which exclude the `README.md` file, are
 needed during installation but can be skipped once the `.rcrc` configuration
 file is symlinked in.
 

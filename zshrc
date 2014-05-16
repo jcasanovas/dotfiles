@@ -71,8 +71,6 @@ fi
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
-source ~/.zsh/git-prompt/git-completion.sh
-
 # Load RVM into a shell session *as a function*
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 
