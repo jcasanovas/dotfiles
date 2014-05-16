@@ -54,14 +54,12 @@ testunitfocus(){
 alias tfocus=testunitfoucs
 
 # Rails
-alias r='rails'
 alias rs='rails server'
 alias rc='rails console'
 alias rg='rails generate'
 alias ss='script/server'
 alias sc='script/console'
 alias sg='script/generate'
-alias g='guard -n f'
 alias z='zeus'
 alias zstart='zeus start'
 alias zs='zeus server'
