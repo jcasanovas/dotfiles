@@ -68,6 +68,14 @@ if which rbenv &>/dev/null ; then
   eval "$(rbenv init - --no-rehash)"
 fi
 
+# load zsh git prompt
+source ~/.zsh/git-prompt/zshrc.sh
+ZSH_THEME_GIT_PROMPT_PREFIX="( "
+ZSH_THEME_GIT_PROMPT_SUFFIX=" )"
+ZSH_THEME_GIT_PROMPT_SEPARATOR=" | "
+ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[cyan]%}"
+PROMPT='%B%m%~%b$(git_super_status) %# '
+
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
