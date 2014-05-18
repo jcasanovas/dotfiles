@@ -12,12 +12,11 @@ Install [rcm](https://github.com/thoughtbot/rcm):
 
 Install:
 
-    rcup -d .dotfiles -x README.md
+    cd ~/.dotfiles
+    rcup -v -d . -x README.md
 
-This will create symlinks for config files in your home directory. The `-x`
-options, which exclude the `README.md` file, are
-needed during installation but can be skipped once the `.rcrc` configuration
-file is symlinked in.
+This will create symlinks for config files in your home directory. The `-x` options, which exclude the `README.md` file, are
+needed during installation but can be skipped once the `.rcrc` configuration file is symlinked in.
 
 You can safely run `rcup` multiple times to update:
 
