@@ -1,15 +1,3 @@
-# modify the prompt to contain git branch name if applicable
-git_prompt_info() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null)
-  if [[ -n $ref ]]; then
-    echo " %{$fg_bold[green]%}${ref#refs/heads/}%{$reset_color%}"
-  fi
-}
-setopt promptsubst
-export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
-
-# export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \W \[\e[0;31m\][$(~/.rvm/bin/rvm-prompt i v p g system)]\[\e[0;32m\] $(__git_ps1 "(%s)")\[\e[0;37m\] \$\[\033[00m\] '
-
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
@@ -73,7 +61,7 @@ source ~/.zsh/git-prompt/zshrc.sh
 ZSH_THEME_GIT_PROMPT_PREFIX="( "
 ZSH_THEME_GIT_PROMPT_SUFFIX=" )"
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" | "
-ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[cyan]%}"
+ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[cyan]%}✚"
 PROMPT='%B%m%~%b$(git_super_status) %# '
 
 # mkdir .git/safe in the root of repositories you trust
