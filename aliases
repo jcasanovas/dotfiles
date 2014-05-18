@@ -1,5 +1,13 @@
-# Sublime
-alias s='subl'
+# -------------------------------------------------------------------
+# Directory movement
+# -------------------------------------------------------------------
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# Directory shortcuts
+alias projects='~/projects/'
 
 # Go to project
 gotoproject(){
@@ -7,7 +15,14 @@ gotoproject(){
 }
 alias goto=gotoproject
 
+# -------------------------------------------------------------------
+# Sublime
+# -------------------------------------------------------------------
+alias s='subl'
+
+# -------------------------------------------------------------------
 # Unix
+# -------------------------------------------------------------------
 alias c='clear'
 alias k='kill -9'
 alias tlf="tail -f"
@@ -23,8 +38,15 @@ alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
+alias aliases='subl ~/.bash_aliases'
+alias hosts='sudo subl /etc/hosts'
+alias paux='ps aux | grep'
+alias chromium_unsecure="chromium-browser --disable-web-security"
+alias updatezsh='source ~/.zshrc'
 
+# -------------------------------------------------------------------
 # Git
+# -------------------------------------------------------------------
 alias gci='git commit'
 alias gadd='git add'
 alias gst='git status'
@@ -33,19 +55,28 @@ alias gco='git checkout'
 alias amend='git commit --amend'
 alias gitka='gitk --all'
 
+# -------------------------------------------------------------------
 # Svn
+# -------------------------------------------------------------------
 alias sci='svn ci'
 alias sst='svn st --ignore-externals'
 alias sup='svn up --ignore-externals'
 alias slog='svn log --limit=10'
 
+# -------------------------------------------------------------------
 # Bundler
+# -------------------------------------------------------------------
 alias b="bundle"
 
+# -------------------------------------------------------------------
 # Apache
+# -------------------------------------------------------------------
 alias apachestart='sudo service apache2 start'
 alias apachestop='sudo service apache2 stop'
 
+# -------------------------------------------------------------------
+# Ruby and Rails
+# -------------------------------------------------------------------
 # Tests and Specs
 alias t='ruby -Itest'
 testunitfocus(){
@@ -77,19 +108,20 @@ alias tprepare='rake db:test:prepare'
 # Solr
 alias solr='rake sunspot:solr:start RAILS_ENV=development && rake sunspot:solr:start RAILS_ENV=test'
 
+# -------------------------------------------------------------------
+# Databases
+# -------------------------------------------------------------------
 # Postgres
 alias psqlaux='ps aux | grep postgre'
 alias psqlstart='sudo service postgresql start'
 alias psqlrestart='sudo service postgresql restart'
 
+# -------------------------------------------------------------------
 # Others
-alias aliases='subl ~/.bash_aliases'
-alias hosts='sudo subl /etc/hosts'
-alias paux='ps aux | grep'
-alias chromium_unsecure="chromium-browser --disable-web-security"
-
+# -------------------------------------------------------------------
 # Fix the swapped keys for the mac keyboard
 alias fixkeyboard='echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layout'
+
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
