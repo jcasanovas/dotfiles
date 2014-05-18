@@ -1,0 +1,20 @@
+{
+	"installed_packages":
+	[
+		"Alignment",
+		"BeautifyRuby",
+		"BracketHighlighter",
+		"ColorPicker",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Go To Definition",
+		"HTMLBeautify",
+		"Javascript Beautify",
+		"Jump Along Indent",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Ruby on Rails snippets",
+		"SideBarEnhancements"
+	]
+}
