@@ -122,6 +122,9 @@ alias psqlrestart='sudo service postgresql restart'
 # Fix the swapped keys for the mac keyboard
 alias fixkeyboard='echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layout'
 
+# Overwrite dotfiles
+alias overwritedotfiles='cd $HOME/.dotfiles; rcup -v -d . -k -x README.md'
+
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
