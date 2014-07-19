@@ -88,9 +88,6 @@ alias tfocus=testunitfoucs
 alias rs='rails server'
 alias rc='rails console'
 alias rg='rails generate'
-alias ss='script/server'
-alias sc='script/console'
-alias sg='script/generate'
 alias z='zeus'
 alias zstart='zeus start'
 alias zs='zeus server'
@@ -101,8 +98,8 @@ alias zmig='zeus rake db:migrate'
 alias zroutes='zeus rake routes | grep'
 alias ztprepare='zeus rake db:test:prepare'
 alias routes='rake routes | grep'
-alias mig='rake db:migrate'
-alias rol='rake db:rollback'
+alias migrate='rake db:migrate'
+alias rollback='rake db:rollback'
 alias tprepare='rake db:test:prepare'
 
 # Solr
@@ -119,11 +116,11 @@ alias psqlrestart='sudo service postgresql restart'
 # -------------------------------------------------------------------
 # Others
 # -------------------------------------------------------------------
-# Fix the swapped keys for the mac keyboard
-alias fixkeyboard='echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layout'
+# Fix the swapped keys for the mac keyboard on Ubuntu
+alias fix-keyboard='echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layout'
 
 # Overwrite dotfiles
-alias overwritedotfiles='cd $HOME/.dotfiles; rcup -v -d . -k -x README.md'
+alias overwrite-dotfiles='cd $HOME/.dotfiles; rcup -v -d . -k -x README.md'
 
 
 # Include custom aliases
