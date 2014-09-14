@@ -47,12 +47,6 @@ alias updatezsh='source ~/.zshrc'
 # -------------------------------------------------------------------
 # Git
 # -------------------------------------------------------------------
-alias gci='git commit'
-alias gadd='git add'
-alias gst='git status'
-alias greset='git reset HEAD'
-alias gco='git checkout'
-alias amend='git commit --amend'
 alias gitka='gitk --all'
 
 # -------------------------------------------------------------------
