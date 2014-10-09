@@ -41,8 +41,8 @@ alias v="$VISUAL"
 alias aliases='subl ~/.bash_aliases'
 alias hosts='sudo subl /etc/hosts'
 alias paux='ps aux | grep'
-alias chromium_unsecure="chromium-browser --disable-web-security"
-alias updatezsh='source ~/.zshrc'
+alias chromium-unsecure="chromium-browser --disable-web-security"
+alias update-zsh='source ~/.zshrc'
 
 # -------------------------------------------------------------------
 # Git
