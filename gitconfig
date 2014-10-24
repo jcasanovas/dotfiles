@@ -45,6 +45,7 @@
   apply-command = !sh -c 'git filter-branch --tree-filter $1' -
   apply-command-everywhere = !sh -c 'git filter-branch --tree-filter $1 --all' -
   reset = !git reset HEAD
+  remove-merged-branches = !git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d
 [merge]
   ff = only
 [push]

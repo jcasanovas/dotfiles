@@ -60,7 +60,7 @@ ZSH_THEME_GIT_PROMPT_PREFIX="( "
 ZSH_THEME_GIT_PROMPT_SUFFIX=" )"
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" | "
 ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[cyan]%}✚"
-PROMPT='%B%m%~%b$(git_super_status) %# '
+PROMPT='%{$fg_bold[yellow]%}B%m%~%b$(git_super_status) %# '
 
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
