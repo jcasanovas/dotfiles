@@ -116,6 +116,8 @@ alias fix-keyboard='echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layou
 # Overwrite dotfiles
 alias overwrite-dotfiles='cd $HOME/.dotfiles; rcup -v -d . -k -x README.md'
 
+# Alias ctags if you used homebrew
+alias ctags="`brew --prefix`/bin/ctags"""
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
