@@ -332,6 +332,10 @@ let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 " Index ctags from any project, including those outside Rails
 map <leader>ct :!ctags -R .<cr>
 
+" Running :CtrlPTag will let you search through your tags file and jump to where
+" tags are defined
+nnoremap <leader>. :CtrlPTag<cr>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
