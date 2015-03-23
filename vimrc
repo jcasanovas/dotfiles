@@ -348,7 +348,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <leader>r :NERDTreeFind<cr>
 
 " Toggle NERDTree
-map <c-n> :NERDTreeToggle<cr>
+map <c-t> :NERDTreeToggle<cr>
 
 " Close NERDTree when no file is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
