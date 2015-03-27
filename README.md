@@ -3,12 +3,12 @@ Install
 
 Clone onto your laptop:
 
-    git clone git://github.com/davidruizrodri/dotfiles.git ~/.dotfiles
+    git clone git@github.com:jcasanovas/dotfiles.git ~/.dotfiles
 
 Install [rcm](https://github.com/thoughtbot/rcm):
 
-    wget https://thoughtbot.github.io/rcm/debs/rcm_1.2.3-1_all.deb
-	sudo dpkg -i rcm_1.2.3-1_all.deb
+    brew tap thoughtbot/formulae
+    brew install rcm
 
 Install:
 
