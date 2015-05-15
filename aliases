@@ -37,7 +37,7 @@ alias gitka='gitk --all'
 alias gcoi='git checkout integration'
 alias gri2='git rebase -i HEAD~2'
 alias master='git checkout master'
-alias fixup='git add . ; git commit -m "Fix commit above" ; git rebase -i HEAD~2'
+alias fixup='git add . ; git commit --amend --no-edit'
 
 # -------------------------------------------------------------------
 # WUAKI
