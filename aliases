@@ -48,8 +48,8 @@ connect_servers(){
 
 alias connect=connect_servers
 alias cb='cd ~/projects/cerberus; RACK_ENV=development bundle exec rackup -p 4000'
-alias start_cerberus_worker_verbose='cd ~/projects/cerberus; QUEUE=* VVERBOSE=1 bundle exec rake resque:work'
-alias start_worker_verbose='cd ~/projects/wuaki_background; QUEUE=* VVERBOSE=1 bundle exec rake resque:work'
+alias cb-test='cd ~/projects/cerberus; RACK_ENV=test bundle exec rackup -p 5000'
+alias start_worker='QUEUE=* VVERBOSE=1 bundle exec rake resque:work'
 
 # -------------------------------------------------------------------
 # TMUX
