@@ -22,12 +22,10 @@ name: gizmo
 
 windows:
   - gizmo:
-      root: ~/projects/gizmo
-      layout: 675,212x62,0,0[212x24,0,0,16,212x37,0,25{105x37,0,25[105x18,0,25,18,105x18,0,44,19],106x37,106,25[106x18,106,25,20,106x18,106,44,25]}]
+      layout: main-horizontal
       panes:
         -
-        - start_worker
-        - bundle exec rake resque:scheduler
+        - rs
         - rc
   - services: 
       layout: even-horizontal

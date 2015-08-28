@@ -1,7 +1,6 @@
 # ~/.tmuxinator/orzon.yml
 
 name: orzon
-root: ~/projects/orzon
 
 # Optional tmux socket
 # socket_name: foo
