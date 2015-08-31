@@ -1,6 +1,7 @@
 # ~/.tmuxinator/gizmo.yml
 
 name: gizmo
+root: projects/gizmo
 
 # Optional tmux socket
 # socket_name: foo
