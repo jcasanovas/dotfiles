@@ -1,7 +1,7 @@
-# ~/.tmuxinator/gizmo.yml
+# ~/.tmuxinator/fisio.yml
 
 name: gizmo
-root: projects/gizmo
+root: projects/fisio_cms
 
 # Optional tmux socket
 # socket_name: foo
@@ -28,11 +28,3 @@ windows:
         -
         - rs
         - rc
-  - services:
-      layout: ac6d,212x62,0,0{70x62,0,0[70x31,0,0,1,70x30,0,32,7],70x62,71,0,4,70x62,142,0[70x31,142,0,5,70x30,142,32,6]}] 
-      panes:
-        - mysql.server start
-        - cd ; cd projects/enigma ; rackup
-        - redis-server
-        - cb
-        - cb-test
