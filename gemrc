@@ -3,8 +3,5 @@ gem: --no-ri --no-rdoc
 :benchmark: false
 :verbose: true
 :update_sources: true
-:sources:
-- http://rubygems.org/
-- http://wuakideploy:4L0DjFQuHiyd@geminabox.wuaki.org
 :backtrace: true
 :bulk_threshold: 1000
