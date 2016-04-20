@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------
-# Directory movement
+# Dotfiles
 # -------------------------------------------------------------------
 alias update-dotfiles='rcup -v -d . -k -x README.md'
 
@@ -34,8 +34,6 @@ alias karma_start='bundle exec rake karma:start'
 alias gst='git status'
 alias gco='git checkout'
 alias gitka='gitk --all'
-alias gcoi='git checkout integration'
-alias gri2='git rebase -i HEAD~2'
 alias master='git checkout master'
 alias fixup='git add . ; git commit --amend --no-edit'
 
